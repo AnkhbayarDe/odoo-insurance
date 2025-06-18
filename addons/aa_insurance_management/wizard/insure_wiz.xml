@@ -1,0 +1,31 @@
+<odoo>
+    <record id="view_insure_wiz_form" model="ir.ui.view">
+        <field name="name">insure.wiz.form</field>
+        <field name="model">insure.wiz</field>
+        <field name="arch" type="xml">
+            <form string="Insurance Wizard">
+                <group>
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                </group>
+                <footer>
+                    <button name="action_generate" type="object" string="Generate" class="btn-primary"/>
+                    <button string="Cancel" special="cancel" class="btn-secondary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_insure_wiz" model="ir.actions.act_window">
+        <field name="name">Insurance Wizard</field>
+        <field name="res_model">insure.wiz</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_insure_wiz"
+              name="Insurance Wizard"
+              parent="insurance_management_menu_reporting2"
+              action="action_insure_wiz"
+              sequence="10"/>
+</odoo>
