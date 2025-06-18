@@ -27,7 +27,8 @@
         'wizard/insurance_report_wizard_views.xml',
         'report/insurance_policy_report.xml',
         'report/insurance_policy_template.xml',      
-        'wizard/insure_wiz.xml'    
+        'wizard/insure_wiz.xml',
+        'report/insurance_per_person_report_template.xml',
 ],
     'assets': {
         'web.assets_backend': [
