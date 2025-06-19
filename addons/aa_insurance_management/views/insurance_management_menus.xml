@@ -51,10 +51,23 @@
         <field name="target">current</field>
     </record>
 
+        <!-- Action for AI Detections -->
+    <record id="action_ai_detection" model="ir.actions.act_window">
+        <field name="name">AI Detections</field>
+        <field name="res_model">ai.detection</field>
+        <field name="view_mode">tree,form</field>
+        <field name="target">current</field>
+    </record>
+
     <!-- Menu item under Reporting -->
     <menuitem id="menu_report_insurance_per_person"
               name="Insurance Per Person"
               parent="insurance_management_menu_reporting"
               action="action_report_insurance_per_person_listview"
               sequence="10"/>
+    <menuitem id="menu_ai_detections"
+          name="Past Detections"
+          parent="insurance_management_menu_reporting"
+          action="action_ai_detection"
+          sequence="60"/>
 </odoo>

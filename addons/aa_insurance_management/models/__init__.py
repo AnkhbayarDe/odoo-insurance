@@ -7,3 +7,4 @@ from . import policy_details
 from . import policy_type
 from . import payment_type
 from . import res_partner
+from . import ai_detection

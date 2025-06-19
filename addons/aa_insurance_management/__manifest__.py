@@ -11,7 +11,7 @@
     'company': 'TEEE',
     'maintainer': 'TEEE',
     'website': 'https://www.tee.education/',
-    'depends': ['account'],
+    'depends': ['account', 'web'],
     'data': [
         'security/ir.model.access.csv',
         'data/payment_type_data.xml',
@@ -29,10 +29,15 @@
         'report/insurance_policy_template.xml',      
         'wizard/insure_wiz.xml',
         'report/insurance_per_person_report_template.xml',
+        'views/ai_detection_views.xml',
 ],
     'assets': {
         'web.assets_backend': [
             'account/static/src/components/**/*',
+        ],
+    # Add this if you have a controller folder
+    'controllers': [
+        'controllers/ai_detection_controller.py',
         ],
     },
     'images': ['static/description/banner.png'],
