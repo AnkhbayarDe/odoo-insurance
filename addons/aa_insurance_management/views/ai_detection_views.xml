@@ -23,9 +23,9 @@
           <group>
             <field name="name"/>
             <field name="confidence"/>
-            <field name="image" filename="image_filename"/>
+            <field name="image" filename="image_filename" widget="image"/>
             <field name="result_filename"/>
-            <field name="result_image" filename="result_filename"/>
+            <field name="result_image" filename="result_filename" widget="image"/>
           </group>
         </sheet>
       </form>

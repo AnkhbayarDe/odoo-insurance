@@ -20,7 +20,7 @@ class AiDetection(models.Model):
 
     name = fields.Char(string="Name")
     image = fields.Binary(string="Original Image")
-    result_image = fields.Binary(string="Detected Image", readonly=True)
+    result_image = fields.Binary(string="Detected Image")
     result_filename = fields.Char(string="Detected Filename")
     image_filename = fields.Char(string="Filename")
     uploaded_by = fields.Many2one('res.users', default=lambda self: self.env.user)
@@ -55,8 +55,10 @@ class AiDetection(models.Model):
         # Convert to base64
         buffer = io.BytesIO()
         plt.imsave(buffer, img, format='png')
-        result_img_data = buffer.getvalue()
-        encoded_result = base64.b64encode(result_img_data).decode('utf-8')
+        buffer.seek(0)  # <- important
+        result_img_data = buffer.read()
+        encoded_result = base64.b64encode(result_img_data)
+
 
         # Create record in Odoo
         print("Creating detection with:")
@@ -69,11 +71,15 @@ class AiDetection(models.Model):
             'result_filename': 'detected_' + image_path.split("/")[-1],
         })
 
+        base_name = image_path.split("/")[-1].rsplit(".", 1)[0]
+        detected_filename = f"detected_{base_name}.png"
+
         return self.create({
             'name': name,
             'image_filename': image_path.split("/")[-1],
             'confidence': confidence,
             'image': encoded_original,
-            'result_image': encoded_result,
-            'result_filename': 'detected_' + image_path.split("/")[-1],
-        })
+            'result_image': result_img_data,
+            'result_filename': detected_filename,
+        })   
+    
