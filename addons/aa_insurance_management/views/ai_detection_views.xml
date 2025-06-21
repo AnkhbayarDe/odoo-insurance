@@ -1,19 +1,4 @@
 <odoo>
-  <!-- Tree View -->
-  <record id="view_ai_detection_tree" model="ir.ui.view">
-    <field name="name">ai.detection.tree</field>
-    <field name="model">ai.detection</field>
-    <field name="arch" type="xml">
-      <tree string="AI Detections">
-        <field name="name"/>
-        <field name="confidence"/>
-        <field name="detected_at"/>
-        <field name="result_image"/>
-      </tree>
-    </field>
-  </record>
-
-  <!-- Form View -->
   <record id="view_ai_detection_form" model="ir.ui.view">
     <field name="name">ai.detection.form</field>
     <field name="model">ai.detection</field>
@@ -22,27 +7,11 @@
         <sheet>
           <group>
             <field name="name"/>
-            <field name="confidence"/>
             <field name="image" filename="image_filename" widget="image"/>
-            <field name="result_filename"/>
             <field name="result_image" filename="result_filename" widget="image"/>
           </group>
         </sheet>
       </form>
     </field>
   </record>
-
-  <!-- Action -->
-  <record id="action_ai_detection" model="ir.actions.act_window">
-    <field name="name">AI Detections</field>
-    <field name="res_model">ai.detection</field>
-    <field name="view_mode">tree,form</field>
-  </record>
-
-  <!-- Menu -->
-  <menuitem id="menu_ai_detections"
-            name="Past Detections"
-            parent="insurance_management_menu_reporting"
-            action="action_ai_detection"
-            sequence="30"/>
 </odoo>

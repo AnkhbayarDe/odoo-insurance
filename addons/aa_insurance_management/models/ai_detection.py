@@ -1,18 +1,7 @@
-import base64
-import io
-import cv2
-import numpy as np
-import matplotlib.pyplot as plt
-
 from odoo import models, fields, api
-
-# RoboFlow
-from inference_sdk import InferenceHTTPClient, InferenceConfiguration
-
-CLIENT = InferenceHTTPClient(
-    api_url="https://serverless.roboflow.com",
-    api_key="b2cdoHqW3C4PJBx2QBbD"
-)
+import requests
+import os
+import base64  # you forgot to import base64 here
 
 class AiDetection(models.Model):
     _name = 'ai.detection'
@@ -25,61 +14,40 @@ class AiDetection(models.Model):
     image_filename = fields.Char(string="Filename")
     uploaded_by = fields.Many2one('res.users', default=lambda self: self.env.user)
     upload_date = fields.Datetime(default=fields.Datetime.now)
-    
-    confidence = fields.Float(string="Confidence")  
+    confidence = fields.Float(string="Confidence")
     detected_at = fields.Datetime(string="Detected At", default=fields.Datetime.now)
 
     @api.model
     def create_detection(self, name, image_path):
-        # Load image and encode original
+        # Upload image to FastAPI
+        with open(image_path, 'rb') as img_file:
+            files = {'file': (os.path.basename(image_path), img_file, 'image/jpeg')}
+            try:
+                response = requests.post("http://127.0.0.1:9000/detect", files=files)
+                #response = requests.post("http://localhost:9000/detect", 
+                #files=files)
+                response.raise_for_status()
+            except requests.exceptions.RequestException as e:
+                raise ValueError(f"Error contacting AI server: {e}")
+
+        result = response.json()
+
+        # Handle result
+        result_image_b64 = result.get("result_image")
+        confidence = result.get("confidence")
+        result_filename = result.get("result_filename")
+
+        # Read original image
         with open(image_path, 'rb') as f:
             original_img_data = f.read()
-        encoded_original = base64.b64encode(original_img_data).decode('utf-8')
-
-        # Inference config
-        config = InferenceConfiguration(confidence_threshold=0.1)
-        with CLIENT.use_configuration(config):
-            result = CLIENT.infer(image_path, model_id="car-damage-detection-ha5mm/1")
-
-        prediction = result["predictions"][0]
-        confidence = prediction['confidence']
-
-        # Draw bounding box
-        img = cv2.imread(image_path)
-        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-        x, y, w, h = prediction["x"], prediction["y"], prediction["width"], prediction["height"]
-        x1, y1 = int(x - w / 2), int(y - h / 2)
-        x2, y2 = int(x + w / 2), int(y + h / 2)
-        cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), 2)
-
-        # Convert to base64
-        buffer = io.BytesIO()
-        plt.imsave(buffer, img, format='png')
-        buffer.seek(0)  # <- important
-        result_img_data = buffer.read()
-        encoded_result = base64.b64encode(result_img_data)
-
+        encoded_original = base64.b64encode(original_img_data).decode("utf-8")
 
         # Create record in Odoo
-        print("Creating detection with:")
-        print({
-            'name': name,
-            'image_filename': image_path.split("/")[-1],
-            'confidence': confidence,
-            'image': encoded_original[:30] + "...",
-            'result_image': encoded_result[:30] + "...",
-            'result_filename': 'detected_' + image_path.split("/")[-1],
-        })
-
-        base_name = image_path.split("/")[-1].rsplit(".", 1)[0]
-        detected_filename = f"detected_{base_name}.png"
-
         return self.create({
             'name': name,
-            'image_filename': image_path.split("/")[-1],
+            'image_filename': os.path.basename(image_path),
             'confidence': confidence,
             'image': encoded_original,
-            'result_image': result_img_data,
-            'result_filename': detected_filename,
-        })   
-    
+            'result_image': result_image_b64,
+            'result_filename': result_filename,
+        })
