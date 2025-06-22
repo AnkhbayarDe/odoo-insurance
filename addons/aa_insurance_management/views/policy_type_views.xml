@@ -35,6 +35,27 @@
             </p>
         </field>
     </record>
+    <!--    Search view for policy types-->
+    <record id="policy_type_view_search" model="ir.ui.view">
+        <field name="name">policy.type.view.search</field>
+        <field name="model">policy.type</field>
+        <field name="arch" type="xml">
+            <search string="Search Policy Types">
+                <!-- Search bar -->
+                <field name="name"/>
+
+                <!-- Filters -->
+                <filter string="Life Insurance" name="filter_life" domain="[('name', 'ilike', 'life')]"/>
+                <filter string="Health Insurance" name="filter_health" domain="[('name', 'ilike', 'health')]"/>
+
+                <!-- Group By (not useful with only name, but placeholder) -->
+                <group expand="0" string="Group By">
+                    <filter string="Name" name="group_by_name" context="{'group_by': 'name'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
     <!--  Parent Menu item for Policy  type-->
     <menuitem id="policy_type_menu_action" name="Policy Type"
               parent="insurance_management_menu_configuration"

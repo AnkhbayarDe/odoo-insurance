@@ -14,4 +14,25 @@
       </form>
     </field>
   </record>
+  <record id="view_ai_detection_search" model="ir.ui.view">
+    <field name="name">ai.detection.search</field>
+    <field name="model">ai.detection</field>
+    <field name="arch" type="xml">
+      <search>
+        <field name="name"/>
+        <field name="confidence"/>
+        <filter string="High Confidence" name="high_conf" domain="[('confidence','>',0.9)]"/>
+        <group expand="1" string="Group By">
+          <filter string="Uploader" name="uploaded_by" context="{'group_by':'uploaded_by'}"/>
+          <filter string="Detected Date" name="detected_at" context="{'group_by':'detected_at'}"/>
+        </group>
+      </search>
+    </field>
+  </record>
+   <record id="action_ai_detection" model="ir.actions.act_window">
+    <field name="name">AI Detections</field>
+    <field name="res_model">ai.detection</field>
+    <field name="view_mode">tree,form</field>
+    <field name="search_view_id" ref="view_ai_detection_search"/>
+  </record>
 </odoo>

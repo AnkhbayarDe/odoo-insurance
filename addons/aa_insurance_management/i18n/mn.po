@@ -1,0 +1,1120 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* aa_insurance_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-22 20:42+0000\n"
+"PO-Revision-Date: 2025-06-22 20:42+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.view_ai_detection_form
+msgid "AI Detection"
+msgstr "Хиймэл оюун илрүүлэлт"
+
+#. module: aa_insurance_management
+#: model:ir.model,name:aa_insurance_management.model_ai_detection
+msgid "AI Detection Result"
+msgstr "Хиймэл оюун илрүүлэлтийн үр дүн"
+
+#. module: aa_insurance_management
+#: model:ir.actions.act_window,name:aa_insurance_management.action_ai_detection
+msgid "AI Detections"
+msgstr "Хиймэл оюун илрүүлэлтүүд"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_claim_details__employee_id
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__employee_id
+#: model:ir.ui.menu,name:aa_insurance_management.employee_details_menu_action
+#: model:ir.ui.menu,name:aa_insurance_management.insurance_management_menu_agent
+msgid "Agent"
+msgstr "Агент"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_insurance_details__employee_id
+msgid "Agent related to the insurance"
+msgstr "Даатгалтай холбоотой агент"
+
+#. module: aa_insurance_management
+#. odoo-python
+#: code:addons/aa_insurance_management/models/insurance_details.py:0
+#, python-format
+msgid "All invoices must be paid"
+msgstr "Бүх нэхэмжлэлийг төлсөн байх ёстой"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_claim_details__amount
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__amount
+#: model:ir.model.fields,field_description:aa_insurance_management.field_policy_details__amount
+msgid "Amount"
+msgstr "Дүн"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_claim_details__amount
+msgid "Amount related to insurance"
+msgstr "Даатгалтай холбоотой дүн"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__amount_remaining
+msgid "Amount remaining"
+msgstr "Үлдэгдэл дүн"
+
+#. module: aa_insurance_management
+#. odoo-python
+#: code:addons/aa_insurance_management/models/employee_details.py:0
+#: code:addons/aa_insurance_management/models/insurance_details.py:0
+#, python-format
+msgid "Amount should be greater than zero"
+msgstr "Дүн нь тэгээс их байх ёстой"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.view_payment_type_search
+msgid "Bank Transfer"
+msgstr "Банкны шилжүүлэг"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_employee_details__base_salary
+msgid "Base Salary"
+msgstr "Үндсэн цалин"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.claim_details_view_search
+msgid "Billed"
+msgstr "Нэхэмжилсэн"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields.selection,name:aa_insurance_management.selection__employee_details__salary_type__both
+msgid "Both"
+msgstr "Хоёулаа"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.view_insurance_report_wizard
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.view_insure_wiz_form
+msgid "Cancel"
+msgstr "Цуцлах"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.view_payment_type_search
+msgid "Cash"
+msgstr "Бэлэн мөнгө"
+
+#. module: aa_insurance_management
+#: model:ir.model,name:aa_insurance_management.model_claim_details
+msgid "Claim Details"
+msgstr "Нэхэмжлэлийн дэлгэрэнгүй"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.claim_details_view_form
+msgid "Claim Details Form"
+msgstr "Нэхэмжлэлийн дэлгэрэнгүй маягт"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.claim_details_view_tree
+msgid "Claim Details Tree"
+msgstr "Нэхэмжлэлийн дэлгэрэнгүй жагсаалт"
+
+#. module: aa_insurance_management
+#: model:ir.actions.act_window,name:aa_insurance_management.claim_details_action
+msgid "Claim Management"
+msgstr "Нэхэмжлэлийн удирдлага"
+
+#. module: aa_insurance_management
+#: model:ir.ui.menu,name:aa_insurance_management.claim_details_menu_action
+msgid "Claims"
+msgstr "Нэхэмжлэлүүд"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_details_view_form
+msgid "Close"
+msgstr "Хаах"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields.selection,name:aa_insurance_management.selection__insurance_details__state__closed
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_details_view_search
+msgid "Closed"
+msgstr "Хаагдсан"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_claim_details__note_field
+#: model:ir.model.fields,field_description:aa_insurance_management.field_employee_details__note_field
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__note_field
+#: model:ir.model.fields,field_description:aa_insurance_management.field_policy_details__note_field
+msgid "Comment"
+msgstr "Тайлбар"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields.selection,name:aa_insurance_management.selection__employee_details__salary_type__commission
+msgid "Commission"
+msgstr "Комисс"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__commission_rate
+msgid "Commission Percentage"
+msgstr "Комиссын хувь"
+
+#. module: aa_insurance_management
+#. odoo-python
+#: code:addons/aa_insurance_management/models/insurance_details.py:0
+#, python-format
+msgid "Commission Percentage should be between 1-100"
+msgstr "Комиссын хувь 1-100 хооронд байх ёстой"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.employee_details_view_search
+msgid "Commission Salary"
+msgstr "Комиссын цалин"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_ai_detection__confidence
+msgid "Confidence"
+msgstr "Итгэлцүүр"
+
+#. module: aa_insurance_management
+#: model:ir.ui.menu,name:aa_insurance_management.insurance_management_menu_configuration
+msgid "Configuration"
+msgstr "Тохиргоо"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_details_view_form
+msgid "Confirm"
+msgstr "Баталгаажуулах"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields.selection,name:aa_insurance_management.selection__insurance_details__state__confirmed
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_details_view_search
+msgid "Confirmed"
+msgstr "Баталгаажсан"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_claim_details__insurance_id
+msgid "Confirmed orders can be selected"
+msgstr "Баталгаажсан захиалгыг сонгож болно"
+
+#. module: aa_insurance_management
+#: model:ir.model,name:aa_insurance_management.model_res_partner
+msgid "Contact"
+msgstr "Харилцах хаяг"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.claim_details_view_form
+msgid "Create Bill"
+msgstr "Билл үүсгэх"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_details_view_form
+msgid "Create Invoice"
+msgstr "Нэхэмжлэл үүсгэх"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_ai_detection__create_uid
+#: model:ir.model.fields,field_description:aa_insurance_management.field_claim_details__create_uid
+#: model:ir.model.fields,field_description:aa_insurance_management.field_employee_details__create_uid
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__create_uid
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_report_wizard__create_uid
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insure_wiz__create_uid
+#: model:ir.model.fields,field_description:aa_insurance_management.field_payment_type__create_uid
+#: model:ir.model.fields,field_description:aa_insurance_management.field_policy_details__create_uid
+#: model:ir.model.fields,field_description:aa_insurance_management.field_policy_type__create_uid
+msgid "Created by"
+msgstr "Үүсгэсэн"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_ai_detection__create_date
+#: model:ir.model.fields,field_description:aa_insurance_management.field_claim_details__create_date
+#: model:ir.model.fields,field_description:aa_insurance_management.field_employee_details__create_date
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__create_date
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_report_wizard__create_date
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insure_wiz__create_date
+#: model:ir.model.fields,field_description:aa_insurance_management.field_payment_type__create_date
+#: model:ir.model.fields,field_description:aa_insurance_management.field_policy_details__create_date
+#: model:ir.model.fields,field_description:aa_insurance_management.field_policy_type__create_date
+msgid "Created on"
+msgstr "Үүсгэсэн огноо"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.view_payment_type_search
+msgid "Credit Card"
+msgstr "Кредит карт"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_claim_details__currency_id
+#: model:ir.model.fields,field_description:aa_insurance_management.field_employee_details__currency_id
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__currency_id
+#: model:ir.model.fields,field_description:aa_insurance_management.field_policy_details__currency_id
+msgid "Currency"
+msgstr "Валют"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_claim_details__partner_id
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__partner_id
+msgid "Customer"
+msgstr "Харилцагч"
+
+#. module: aa_insurance_management
+#: model:ir.ui.menu,name:aa_insurance_management.res_partner_customer_menu_action
+msgid "Customers"
+msgstr "Харилцагчид"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_claim_details__date_claimed
+msgid "Date Applied"
+msgstr "Өргөдөл гаргасан огноо"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__close_date
+msgid "Date Closed"
+msgstr "Хаасан огноо"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__start_date
+msgid "Date Started"
+msgstr "Эхэлсэн огноо"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_claim_details__date_claimed
+msgid "Date of apply of claim details"
+msgstr "Нэхэмжлэлийн дэлгэрэнгүйг гаргасан огноо"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_ai_detection__detected_at
+msgid "Detected At"
+msgstr "Илрүүлсэн огноо"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.view_ai_detection_search
+msgid "Detected Date"
+msgstr "Илрүүлсэн огноо"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_ai_detection__result_filename
+msgid "Detected Filename"
+msgstr "Илрүүлсэн файлын нэр"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_ai_detection__result_image
+msgid "Detected Image"
+msgstr "Илрүүлсэн зураг"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_ai_detection__display_name
+#: model:ir.model.fields,field_description:aa_insurance_management.field_claim_details__display_name
+#: model:ir.model.fields,field_description:aa_insurance_management.field_employee_details__display_name
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__display_name
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_report_wizard__display_name
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insure_wiz__display_name
+#: model:ir.model.fields,field_description:aa_insurance_management.field_payment_type__display_name
+#: model:ir.model.fields,field_description:aa_insurance_management.field_policy_details__display_name
+#: model:ir.model.fields,field_description:aa_insurance_management.field_policy_type__display_name
+msgid "Display Name"
+msgstr "Дэлгэрэнгүй нэр"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields.selection,name:aa_insurance_management.selection__insurance_details__state__draft
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_details_view_search
+msgid "Draft"
+msgstr "Ноорог"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__policy_duration
+msgid "Duration in months"
+msgstr "Саруудаар үргэлжлэх хугацаа"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_per_person_report
+msgid "Email:"
+msgstr "Имэйл:"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.claim_details_view_search
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_details_view_search
+msgid "Employee"
+msgstr "Ажилтан"
+
+#. module: aa_insurance_management
+#: model:ir.model,name:aa_insurance_management.model_employee_details
+msgid "Employee Details"
+msgstr "Ажилтны дэлгэрэнгүй"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.employee_details_view_form
+msgid "Employee Details Form"
+msgstr "Ажилтны дэлгэрэнгүй маягт"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.employee_details_view_tree
+msgid "Employee Details Tree"
+msgstr "Ажилтны дэлгэрэнгүй жагсаалт"
+
+#. module: aa_insurance_management
+#: model:ir.actions.act_window,name:aa_insurance_management.employee_details_action
+msgid "Employee Management"
+msgstr "Ажилтны удирдлага"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_claim_details__employee_id
+msgid "Employee related to insurance"
+msgstr "Даатгалтай холбоотой ажилтан"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_report_wizard__end_date
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insure_wiz__end_date
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_per_person_report
+msgid "End Date"
+msgstr "Дуусах огноо"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_insurance_details__close_date
+msgid "End date of insurance"
+msgstr "Даатгалын дуусах огноо"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.claim_details_view_form
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.employee_details_view_form
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_details_view_form
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.policy_details_view_form
+msgid "Extra Notes"
+msgstr "Нэмэлт тэмдэглэл"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields.selection,name:aa_insurance_management.selection__employee_details__sex__female
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.employee_details_view_search
+msgid "Female"
+msgstr "Эмэгтэй"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_ai_detection__image_filename
+msgid "Filename"
+msgstr "Файлын нэр"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields.selection,name:aa_insurance_management.selection__employee_details__salary_type__fixed
+#: model:ir.model.fields.selection,name:aa_insurance_management.selection__insurance_details__payment_type__fixed
+msgid "Fixed"
+msgstr "Тогтмол"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_details_view_search
+msgid "Fixed Payment"
+msgstr "Тогтмол төлбөр"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.employee_details_view_search
+msgid "Fixed Salary"
+msgstr "Тогтмол цалин"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.report_insurance_policy_template
+msgid "From:"
+msgstr "Эхлэх:"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.employee_details_view_search
+msgid "Gender"
+msgstr "Хүйс"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.view_insure_wiz_form
+msgid "Generate"
+msgstr "Үүсгэх"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.view_insurance_report_wizard
+msgid "Generate Insurance Report"
+msgstr "Даатгалын тайлан үүсгэх"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.view_insurance_report_wizard
+msgid "Generate Report"
+msgstr "Тайлан үүсгэх"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_employee_details__note_field
+msgid "Give notes,if any"
+msgstr "Хэрэв тэмдэглэл байгаа бол бичнэ үү"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_policy_details__amount
+msgid "Give the amount for the policy"
+msgstr "Бодлогын дүнг оруулна уу"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_employee_details__base_salary
+msgid "Give the base salary of employee"
+msgstr "Ажилтны үндсэн цалинг оруулна уу"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_account_bank_statement_line__claim_id
+#: model:ir.model.fields,help:aa_insurance_management.field_account_move__claim_id
+#: model:ir.model.fields,help:aa_insurance_management.field_account_payment__claim_id
+msgid "Give the claim details"
+msgstr "Нэхэмжлэлийн дэлгэрэнгүйг оруулна уу"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_insurance_details__commission_rate
+msgid "Give the commission rate of insurance to the agent"
+msgstr "Агентад өгөх даатгалын комиссын хувийг оруулна уу"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_insurance_details__currency_id
+msgid "Give the currency"
+msgstr "Валютыг оруулна уу"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_insurance_details__amount_installment
+msgid "Give the installment amount for the policy"
+msgstr "Бодлогын хэсэгчилсэн төлбөрийн дүнг оруулна уу"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_account_bank_statement_line__insurance_id
+#: model:ir.model.fields,help:aa_insurance_management.field_account_move__insurance_id
+#: model:ir.model.fields,help:aa_insurance_management.field_account_payment__insurance_id
+msgid "Give the insurance details in invoice"
+msgstr "Нэхэмжлэлд даатгалын дэлгэрэнгүйг оруулна уу"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_insurance_details__note_field
+msgid "Give the notes"
+msgstr "Тэмдэглэл оруулна уу"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_policy_details__name
+msgid "Give the policy name"
+msgstr "Бодлогын нэрийг оруулна уу"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_policy_type__name
+msgid "Give the policy type"
+msgstr "Бодлогын төрлийг оруулна уу"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.claim_details_view_search
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.employee_details_view_search
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_details_view_search
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.policy_details_view_search
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.policy_type_view_search
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.view_ai_detection_search
+msgid "Group By"
+msgstr "Бүлэглэх"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.policy_type_view_search
+msgid "Health Insurance"
+msgstr "Эрүүл мэндийн даатгал"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__hide_inv_button
+msgid "Hide Inv Button"
+msgstr "Нэхэмжлэх товчийг нуух"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.policy_details_view_search
+msgid "High Amount"
+msgstr "Их дүн"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.view_ai_detection_search
+msgid "High Confidence"
+msgstr "Өндөр итгэлцүүр"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_ai_detection__id
+#: model:ir.model.fields,field_description:aa_insurance_management.field_claim_details__id
+#: model:ir.model.fields,field_description:aa_insurance_management.field_employee_details__id
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__id
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_report_wizard__id
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insure_wiz__id
+#: model:ir.model.fields,field_description:aa_insurance_management.field_payment_type__id
+#: model:ir.model.fields,field_description:aa_insurance_management.field_policy_details__id
+#: model:ir.model.fields,field_description:aa_insurance_management.field_policy_type__id
+msgid "ID"
+msgstr "Дугаар"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields.selection,name:aa_insurance_management.selection__insurance_details__payment_type__installment
+msgid "Installment"
+msgstr "Хэсэгчилсэн"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__amount_installment
+msgid "Installment Amount"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_details_view_search
+msgid "Installment Payment"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_account_bank_statement_line__insurance_id
+#: model:ir.model.fields,field_description:aa_insurance_management.field_account_move__insurance_id
+#: model:ir.model.fields,field_description:aa_insurance_management.field_account_payment__insurance_id
+#: model:ir.model.fields,field_description:aa_insurance_management.field_claim_details__insurance_id
+#: model:ir.ui.menu,name:aa_insurance_management.insurance_details_menu_action
+#: model:ir.ui.menu,name:aa_insurance_management.insurance_management_menu_root
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.claim_details_view_search
+msgid "Insurance"
+msgstr "Даатгал"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_account_bank_statement_line__claim_id
+#: model:ir.model.fields,field_description:aa_insurance_management.field_account_move__claim_id
+#: model:ir.model.fields,field_description:aa_insurance_management.field_account_payment__claim_id
+msgid "Insurance Claim"
+msgstr "Даатгалын нэхэмжлэл"
+
+#. module: aa_insurance_management
+#: model:ir.model,name:aa_insurance_management.model_insurance_details
+#: model:ir.model.fields,field_description:aa_insurance_management.field_res_partner__insurance_details_ids
+#: model:ir.model.fields,field_description:aa_insurance_management.field_res_users__insurance_details_ids
+msgid "Insurance Details"
+msgstr "Даатгалын дэлгэрэнгүй"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_details_view_form
+msgid "Insurance Details Form"
+msgstr "Даатгалын дэлгэрэнгүй маягт"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_details_view_tree
+msgid "Insurance Details Tree"
+msgstr "Даатгалын дэлгэрэнгүй жагсаалт"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_per_person_report
+msgid "Insurance Information Per Person"
+msgstr "Хүн тус бүрийн даатгалын мэдээлэл"
+
+#. module: aa_insurance_management
+#: model:ir.actions.act_window,name:aa_insurance_management.insurance_details_action
+#: model:ir.ui.menu,name:aa_insurance_management.insurance_management_menu_insurance_management
+msgid "Insurance Management"
+msgstr "Даатгалын удирдлага"
+
+#. module: aa_insurance_management
+#: model:ir.ui.menu,name:aa_insurance_management.menu_report_insurance_per_person
+msgid "Insurance Per Person"
+msgstr "Хүн тус бүрийн даатгал"
+
+#. module: aa_insurance_management
+#: model:ir.actions.act_window,name:aa_insurance_management.action_insurance_report_wizard
+#: model:ir.actions.act_window,name:aa_insurance_management.action_report_insurance_per_person_listview
+#: model:ir.ui.menu,name:aa_insurance_management.insurance_management_menu_reporting_action
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.report_insurance_policy_template
+msgid "Insurance Report"
+msgstr "Даатгалын тайлан"
+
+#. module: aa_insurance_management
+#: model:ir.model,name:aa_insurance_management.model_insurance_report_wizard
+msgid "Insurance Report Wizard"
+msgstr "Даатгалын тайлангийн туслах"
+
+#. module: aa_insurance_management
+#: model:ir.model,name:aa_insurance_management.model_insure_wiz
+msgid "Insurance Report2 Wizard"
+msgstr "Даатгалын тайлан 2 туслах"
+
+#. module: aa_insurance_management
+#: model:ir.actions.act_window,name:aa_insurance_management.action_insure_wiz
+#: model:ir.ui.menu,name:aa_insurance_management.menu_insure_wiz
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.view_insure_wiz_form
+msgid "Insurance Wizard"
+msgstr "Даатгалын туслах"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.employee_details_view_form
+msgid "Insurance details"
+msgstr "Даатгалын дэлгэрэнгүй"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_employee_details__insurance_ids
+msgid "Insurance details created by employee"
+msgstr "Ажилтнаар үүсгэсэн даатгалын дэлгэрэнгүй"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_employee_details__invoice_id
+msgid "Invoice of last payment"
+msgstr "Сүүлийн төлбөрийн нэхэмжлэл"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_claim_details__invoice_id
+msgid "Invoice related to the claim"
+msgstr "Нэхэмжлэлтэй холбоотой нэхэмжлэл"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_claim_details__invoice_id
+msgid "Invoiced"
+msgstr "Нэхэмжилсэн"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__invoice_ids
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_details_view_form
+msgid "Invoices"
+msgstr "Нэхэмжлэлүүд"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_insurance_details__invoice_ids
+msgid "Invoices related to insurance "
+msgstr "Даатгалтай холбоотой нэхэмжлэлүүд"
+
+#. module: aa_insurance_management
+#: model:ir.model,name:aa_insurance_management.model_account_move
+msgid "Journal Entry"
+msgstr "Ажил гүйлгээ"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_employee_details__insurance_ids
+msgid "Last Details"
+msgstr "Сүүлийн дэлгэрэнгүй"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_employee_details__last_salary_date
+msgid "Last Payment On"
+msgstr "Сүүлийн төлбөрийн огноо"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_ai_detection__write_uid
+#: model:ir.model.fields,field_description:aa_insurance_management.field_claim_details__write_uid
+#: model:ir.model.fields,field_description:aa_insurance_management.field_employee_details__write_uid
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__write_uid
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_report_wizard__write_uid
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insure_wiz__write_uid
+#: model:ir.model.fields,field_description:aa_insurance_management.field_payment_type__write_uid
+#: model:ir.model.fields,field_description:aa_insurance_management.field_policy_details__write_uid
+#: model:ir.model.fields,field_description:aa_insurance_management.field_policy_type__write_uid
+msgid "Last Updated by"
+msgstr "Сүүлд шинэчилсэн"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_ai_detection__write_date
+#: model:ir.model.fields,field_description:aa_insurance_management.field_claim_details__write_date
+#: model:ir.model.fields,field_description:aa_insurance_management.field_employee_details__write_date
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__write_date
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_report_wizard__write_date
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insure_wiz__write_date
+#: model:ir.model.fields,field_description:aa_insurance_management.field_payment_type__write_date
+#: model:ir.model.fields,field_description:aa_insurance_management.field_policy_details__write_date
+#: model:ir.model.fields,field_description:aa_insurance_management.field_policy_type__write_date
+msgid "Last Updated on"
+msgstr "Сүүлд шинэчилсэн огноо"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_employee_details__invoice_id
+msgid "Last payment"
+msgstr "Сүүлийн төлбөр"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_employee_details__last_salary_date
+msgid "Last salary paid date"
+msgstr "Сүүлийн цалин олгосон огноо"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.policy_type_view_search
+msgid "Life Insurance"
+msgstr "Амьдралын даатгал"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.policy_details_view_search
+msgid "Low Amount"
+msgstr "Бага дүн"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields.selection,name:aa_insurance_management.selection__employee_details__sex__male
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.employee_details_view_search
+msgid "Male"
+msgstr "Эрэгтэй"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_ai_detection__name
+#: model:ir.model.fields,field_description:aa_insurance_management.field_claim_details__name
+#: model:ir.model.fields,field_description:aa_insurance_management.field_employee_details__name
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__name
+#: model:ir.model.fields,field_description:aa_insurance_management.field_policy_details__name
+#: model:ir.model.fields,field_description:aa_insurance_management.field_policy_type__name
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.policy_type_view_search
+msgid "Name"
+msgstr "Нэр"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_employee_details__name
+msgid "Name of the employee"
+msgstr "Ажилтны нэр"
+
+#. module: aa_insurance_management
+#. odoo-python
+#: code:addons/aa_insurance_management/models/claim_details.py:0
+#: code:addons/aa_insurance_management/models/insurance_details.py:0
+#, python-format
+msgid "New"
+msgstr "Шинэ"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_ai_detection__image
+msgid "Original Image"
+msgstr "Эх зураг"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields.selection,name:aa_insurance_management.selection__employee_details__sex__others
+msgid "Others"
+msgstr "Бусад"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.claim_details_view_search
+msgid "Partner"
+msgstr "Харилцагч"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_claim_details__partner_id
+#: model:ir.model.fields,help:aa_insurance_management.field_insurance_details__partner_id
+msgid "Partner related to insurance"
+msgstr "Даатгалтай холбоотой харилцагч"
+
+#. module: aa_insurance_management
+#: model:ir.ui.menu,name:aa_insurance_management.menu_ai_detections
+msgid "Past Detections"
+msgstr "Өмнөх илрүүлэлтүүд"
+
+#. module: aa_insurance_management
+#: model:ir.actions.act_window,name:aa_insurance_management.action_payment_type
+#: model:ir.model,name:aa_insurance_management.model_payment_type
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__payment_type
+#: model:ir.model.fields,field_description:aa_insurance_management.field_payment_type__name
+#: model:ir.model.fields,field_description:aa_insurance_management.field_policy_details__payment_type_ids
+#: model:ir.ui.menu,name:aa_insurance_management.payment_type_menu_action
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_details_view_search
+msgid "Payment Type"
+msgstr "Төлбөрийн төрөл"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_employee_details__phone
+msgid "Phone Number"
+msgstr "Утасны дугаар"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_employee_details__phone
+msgid "Phone number of employee"
+msgstr "Ажилтны утасны дугаар"
+
+#. module: aa_insurance_management
+#. odoo-python
+#: code:addons/aa_insurance_management/models/employee_details.py:0
+#, python-format
+msgid ""
+"Phone number should contain exactly 10 digits and only numbers are allowed"
+msgstr "Утасны дугаар 10 оронтой, зөвхөн тоо байх ёстой"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_per_person_report
+msgid "Phone:"
+msgstr "Утас:"
+
+#. module: aa_insurance_management
+#. odoo-python
+#: code:addons/aa_insurance_management/models/insurance_details.py:0
+#, python-format
+msgid "Please add the policy number"
+msgstr "Бодлогын дугаарыг оруулна уу"
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_claim_details__policy_id
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__policy_id
+#: model:ir.ui.menu,name:aa_insurance_management.policy_details_menu_action
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_per_person_report
+msgid "Policy"
+msgstr "Бодлого"
+
+#. module: aa_insurance_management
+#: model:ir.model,name:aa_insurance_management.model_policy_details
+msgid "Policy Details"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.policy_details_view_form
+msgid "Policy Details Form"
+msgstr "Бодлогын дэлгэрэнгүй маягт"
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.policy_details_view_tree
+msgid "Policy Details Tree"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.actions.act_window,name:aa_insurance_management.policy_details_action
+msgid "Policy Management"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__policy_number
+msgid "Policy Number"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model,name:aa_insurance_management.model_policy_type
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_report_wizard__policy_type_id
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insure_wiz__policy_type_id
+#: model:ir.model.fields,field_description:aa_insurance_management.field_policy_details__policy_type_id
+#: model:ir.ui.menu,name:aa_insurance_management.policy_type_menu_action
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.policy_details_view_search
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.policy_type_view_form
+msgid "Policy Type"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.policy_type_view_tree
+msgid "Policy Type Tree"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.report_insurance_policy_template
+msgid "Policy Type:"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.actions.act_window,name:aa_insurance_management.policy_type_action
+msgid "Policy Types"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_insurance_details__policy_number
+msgid ""
+"Policy number is a unique number thatan insurance company uses to "
+"identifyyou as a policyholder"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_claim_details__policy_id
+msgid "Policy related to insurance"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_employee_details__user_id
+msgid "Related User"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_claim_details__note_field
+msgid "Related notes"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_employee_details__user_id
+msgid "Related user"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.ui.menu,name:aa_insurance_management.insurance_management_menu_reporting
+msgid "Reporting"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.ui.menu,name:aa_insurance_management.insurance_management_menu_reporting2
+msgid "Reporting2"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.employee_details_view_form
+msgid "Salary Payment"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_employee_details__salary_type
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.employee_details_view_search
+msgid "Salary Type"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.claim_details_view_search
+msgid "Search Claims"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.employee_details_view_search
+msgid "Search Employees"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_details_view_search
+msgid "Search Insurance"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.view_payment_type_search
+msgid "Search Payment Types"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.policy_details_view_search
+msgid "Search Policies"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.policy_type_view_search
+msgid "Search Policy Types"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_employee_details__currency_id
+#: model:ir.model.fields,help:aa_insurance_management.field_policy_details__currency_id
+msgid "Select the currency"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_insurance_details__policy_id
+msgid "Select the policy details and the policy preferred"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_insurance_details__payment_type
+#: model:ir.model.fields,help:aa_insurance_management.field_payment_type__name
+#: model:ir.model.fields,help:aa_insurance_management.field_policy_details__policy_type_id
+msgid "Select the policy type"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_policy_details__payment_type_ids
+msgid "Select the policy types"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_employee_details__salary_type
+msgid "Select the salary type"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_employee_details__sex
+msgid "Select the sex of the employee"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_claim_details__name
+msgid "Sequence for claim details"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_insurance_details__name
+msgid "Sequence of insurance created"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_employee_details__sex
+msgid "Sex"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_policy_details__note_field
+msgid "Specify the comments"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_insurance_details__policy_duration
+msgid "Specify the policy duration to which this policy exists"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_report_wizard__start_date
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insure_wiz__start_date
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_per_person_report
+msgid "Start Date"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_insurance_details__start_date
+msgid "Start date of insurance"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_insurance_details__state
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_details_view_search
+msgid "State"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_insurance_details__state
+msgid "State of insurance"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_per_person_report
+msgid "Status"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_insurance_details__amount
+msgid "The amount for the policy based on policy selected"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.insurance_per_person_report
+msgid "Type"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.claim_details_view_search
+msgid "Unbilled"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_ai_detection__upload_date
+msgid "Upload Date"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,field_description:aa_insurance_management.field_ai_detection__uploaded_by
+msgid "Uploaded By"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.view_ai_detection_search
+msgid "Uploader"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.employee_details_view_search
+msgid "User"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model_terms:ir.actions.act_window,help:aa_insurance_management.claim_details_action
+msgid "You haven't created any claims yet."
+msgstr ""
+
+#. module: aa_insurance_management
+#: model_terms:ir.actions.act_window,help:aa_insurance_management.employee_details_action
+msgid "You haven't created any employee yet."
+msgstr ""
+
+#. module: aa_insurance_management
+#: model_terms:ir.actions.act_window,help:aa_insurance_management.insurance_details_action
+msgid "You haven't created any insurance yet."
+msgstr ""
+
+#. module: aa_insurance_management
+#: model_terms:ir.actions.act_window,help:aa_insurance_management.policy_details_action
+#: model_terms:ir.actions.act_window,help:aa_insurance_management.policy_type_action
+msgid "You haven't created any policy yet."
+msgstr ""
+
+#. module: aa_insurance_management
+#. odoo-python
+#: code:addons/aa_insurance_management/models/employee_details.py:0
+#, python-format
+msgid ""
+"You must validate the last payment made in order to create a new payment"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model:ir.model.fields,help:aa_insurance_management.field_claim_details__currency_id
+msgid "default currency"
+msgstr ""
+
+#. module: aa_insurance_management
+#: model_terms:ir.ui.view,arch_db:aa_insurance_management.report_insurance_policy_template
+msgid "to"
+msgstr ""

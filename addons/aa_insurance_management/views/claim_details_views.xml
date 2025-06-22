@@ -83,4 +83,34 @@
             </p>
         </field>
     </record>
+    <!--    Search view for claim details-->
+    <record id="claim_details_view_search" model="ir.ui.view">
+        <field name="name">claim.details.view.search</field>
+        <field name="model">claim.details</field>
+        <field eval="16" name="priority"/>
+        <field name="arch" type="xml">
+            <search string="Search Claims">
+                <!-- Text search -->
+                <field name="name"/>
+                <field name="insurance_id"/>
+                <field name="partner_id"/>
+                <field name="policy_id"/>
+                <field name="employee_id"/>
+
+                <separator/>
+
+                <!-- Invoice filters -->
+                <filter string="Billed" name="filter_billed" domain="[('invoice_id', '!=', False)]"/>
+                <filter string="Unbilled" name="filter_unbilled" domain="[('invoice_id', '=', False)]"/>
+
+                <separator/>
+
+                <group expand="0" string="Group By">
+                    <filter string="Employee" name="group_by_employee" context="{'group_by': 'employee_id'}"/>
+                    <filter string="Insurance" name="group_by_insurance" context="{'group_by': 'insurance_id'}"/>
+                    <filter string="Partner" name="group_by_partner" context="{'group_by': 'partner_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
 </odoo>

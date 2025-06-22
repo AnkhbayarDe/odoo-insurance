@@ -104,4 +104,42 @@
             </search>
         </field>
     </record>
+        <!--    Search view for insurance details-->
+    <record id="insurance_details_view_search" model="ir.ui.view">
+        <field name="name">insurance.details.view.search</field>
+        <field name="model">insurance.details</field>
+        <field eval="16" name="priority"/>
+        <field name="arch" type="xml">
+            <search string="Search Insurance">
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="policy_id"/>
+                <field name="state"/>
+                <field name="payment_type"/>
+                <field name="employee_id"/>
+
+                <separator/>
+
+                <!-- Filters by State -->
+                <filter string="Draft" name="filter_draft" domain="[('state', '=', 'draft')]"/>
+                <filter string="Confirmed" name="filter_confirmed" domain="[('state', '=', 'confirmed')]"/>
+                <filter string="Closed" name="filter_closed" domain="[('state', '=', 'closed')]"/>
+
+                <separator/>
+
+                <!-- Filters by Payment Type -->
+                <filter string="Fixed Payment" name="filter_fixed" domain="[('payment_type', '=', 'fixed')]"/>
+                <filter string="Installment Payment" name="filter_installment" domain="[('payment_type', '=', 'installment')]"/>
+
+                <separator/>
+
+                <group expand="0" string="Group By">
+                    <filter string="State" name="group_by_state" context="{'group_by': 'state'}"/>
+                    <filter string="Employee" name="group_by_employee" context="{'group_by': 'employee_id'}"/>
+                    <filter string="Payment Type" name="group_by_payment_type" context="{'group_by': 'payment_type'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
 </odoo>

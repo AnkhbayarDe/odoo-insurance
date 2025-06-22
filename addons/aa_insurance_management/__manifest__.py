@@ -13,6 +13,7 @@
     'website': 'https://www.tee.education/',
     'depends': ['account', 'web'],
     'data': [
+        'i18n/mn.po'
         'security/ir.model.access.csv',
         'data/payment_type_data.xml',
         'data/insurance_details_data.xml',
