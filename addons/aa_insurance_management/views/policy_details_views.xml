@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!--    Form view for policy details-->
     <record id="policy_details_view_form" model="ir.ui.view">
         <field name="name">policy.details.view.form</field>
         <field name="model">policy.details</field>
@@ -33,7 +32,6 @@
             </form>
         </field>
     </record>
-    <!--    Tree view for policy details-->
     <record id="policy_details_view_tree" model="ir.ui.view">
         <field name="name">policy.details.view.tree</field>
         <field name="model">policy.details</field>

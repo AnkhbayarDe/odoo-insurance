@@ -4,7 +4,6 @@ from odoo.exceptions import UserError, ValidationError
 
 
 class InsuranceDetails(models.Model):
-    """This class creates a model 'insurance.details' and added fields """
     _name = 'insurance.details'
     _description = "Insurance Details"
 

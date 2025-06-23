@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-    <!--    Adding sequence for claim details-->
+
     <record id="claim_details_sequence" model="ir.sequence">
         <field name="name">Claim Details</field>
         <field name="code">claim.details</field>

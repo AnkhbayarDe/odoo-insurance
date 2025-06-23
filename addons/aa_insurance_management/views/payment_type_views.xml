@@ -34,7 +34,6 @@
             <search string="Search Payment Types">
                 <field name="name"/>
 
-                <!-- Example filters for common payment types, adjust as needed -->
                 <filter string="Credit Card" name="filter_credit_card" domain="[('name', 'ilike', 'credit card')]"/>
                 <filter string="Cash" name="filter_cash" domain="[('name', 'ilike', 'cash')]"/>
                 <filter string="Bank Transfer" name="filter_bank_transfer" domain="[('name', 'ilike', 'bank transfer')]"/>

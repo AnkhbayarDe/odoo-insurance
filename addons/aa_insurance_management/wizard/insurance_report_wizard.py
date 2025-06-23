@@ -8,7 +8,6 @@ class InsuranceReportWizard(models.TransientModel):
     policy_type_id = fields.Many2one('policy.type', string="Policy Type")
 
     def generate_report(self):
-        # Add logic here or call an action
         data = {
             'form': self.read()[0]
         }

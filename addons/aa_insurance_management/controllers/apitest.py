@@ -2,8 +2,7 @@ import requests
 from requests.auth import HTTPBasicAuth
 
 url = "http://localhost:8070/ai/upload"
-auth = HTTPBasicAuth('ankhbayar.ed@gmail.com', 'ankhaa123')  # Change to your actual credentials
-
+auth = HTTPBasicAuth('ankhbayar.ed@gmail.com', 'ankhaa123') 
 with open("C:\Users\anuji\OneDrive\Desktop\AnkhaaDev\images\crashed_car_black.jpg", "rb") as f:
     files = {"image": f}
     data = {"name": "Test Image"}

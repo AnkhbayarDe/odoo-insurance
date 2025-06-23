@@ -2,10 +2,9 @@
     <report 
         id="report_insurance_per_person"
         string="Insurance Per Person"
-        model="res.partner"
+        model="insurance.details"
         report_type="qweb-pdf"
         name="aa_insurance_management.insurance_per_person_report"
         file="aa_insurance_management.insurance_per_person_report"
-        print_report_name="'Insurance Report - %s' % (object.name)"
-    />  
+        print_report_name="'Insurance Report - %s' % (object.name)">
 </odoo>

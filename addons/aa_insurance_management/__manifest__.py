@@ -7,13 +7,12 @@
      commission. haha hehe hoho huhu""",
     'description': """Insurance Management and claims based on policies allows
      the user to create insurance policies it's working""",
-    'author': 'Ankhbayar De',
+    'author': 'Ankhbayar De',   
     'company': 'TEEE',
     'maintainer': 'TEEE',
     'website': 'https://www.tee.education/',
     'depends': ['account', 'web'],
     'data': [
-        'i18n/mn.po'
         'security/ir.model.access.csv',
         'data/payment_type_data.xml',
         'data/insurance_details_data.xml',
@@ -31,12 +30,13 @@
         'wizard/insure_wiz.xml',
         'report/insurance_per_person_report_template.xml',
         'views/ai_detection_views.xml',
+        'data/ir_cron.xml',
 ],
     'assets': {
         'web.assets_backend': [
             'account/static/src/components/**/*',
         ],
-    # Add this if you have a controller folder
+
     'controllers': [
         'controllers/ai_detection_controller.py',
         ],

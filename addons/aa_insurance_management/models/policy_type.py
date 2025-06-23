@@ -3,7 +3,6 @@ from odoo import fields, models
 
 
 class PolicyType(models.Model):
-    """This class creates a model 'policy.type' and added fields """
     _name = 'policy.type'
     _description = "Policy Type"
 

@@ -4,35 +4,33 @@
             <t t-call="web.external_layout">
                 <div class="page">
                     <h2>Insurance Information Per Person</h2>
-                    <t t-foreach="docs" t-as="partner">
-                        <h3><t t-esc="partner.name"/></h3>
-                        <ul>
-                            <li>Email: <t t-esc="partner.email"/></li>
-                            <li>Phone: <t t-esc="partner.phone"/></li>
-                        </ul>
-                        <table class="table table-sm">
-                            <thead>
-                                <tr>
-                                    <th>Policy</th>
-                                    <th>Type</th>
-                                    <th>Status</th>
-                                    <th>Start Date</th>
-                                    <th>End Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr t-foreach="partner.insurance_details_ids" t-as="insurance">
-                                    <td><t t-esc="insurance.name"/></td>
-                                    <td><t t-esc="insurance.policy_id.policy_type_id.name"/></td>
-                                    <td><t t-esc="insurance.state"/></td>
-                                    <td><t t-esc="insurance.start_date"/></td>
-                                    <td><t t-esc="insurance.end_date"/></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </t>
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Customer</th>
+                                <th>Insurance Name</th>
+                                <th>Policy</th>
+                                <th>Agent</th>
+                                <th>Currency</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="partner_insurances" t-as="insurance">
+                                <td><t t-esc="insurance['customer']"/></td>
+                                <td><t t-esc="insurance['name']"/></td>
+                                <td><t t-esc="insurance['policy']"/></td>
+                                <td><t t-esc="insurance['agent']"/></td>
+                                <td><t t-esc="insurance['currency']"/></td>
+                                <td><t t-esc="insurance['amount']"/></td>
+                                <td><t t-esc="insurance['state']"/></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </t>
         </t>
     </template>
 </odoo>
+

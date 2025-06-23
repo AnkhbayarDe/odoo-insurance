@@ -21,7 +21,7 @@
         <field name="name">Insurance Report</field>
         <field name="res_model">insurance.report.wizard</field>
         <field name="view_mode">form</field>
-        <field name="target">new</field> <!-- Makes it a popup (wizard-style) -->
+        <field name="target">new</field> 
     </record>
 
     <menuitem id="insurance_management_menu_reporting_action"

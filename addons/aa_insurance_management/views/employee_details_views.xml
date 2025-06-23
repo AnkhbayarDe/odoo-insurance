@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!--    Form view for employee details-->
     <record id="employee_details_view_form" model="ir.ui.view">
         <field name="name">employee.details.view.form</field>
         <field name="model">employee.details</field>
@@ -43,7 +42,6 @@
             </form>
         </field>
     </record>
-    <!--    Tree view for employee details-->
     <record id="employee_details_view_tree" model="ir.ui.view">
         <field name="name">employee.details.view.tree</field>
         <field name="model">employee.details</field>
@@ -57,7 +55,6 @@
             </tree>
         </field>
     </record>
-    <!--    Action for employee details-->
     <record id="employee_details_action" model="ir.actions.act_window">
         <field name="name">Employee Management</field>
         <field name="res_model">employee.details</field>

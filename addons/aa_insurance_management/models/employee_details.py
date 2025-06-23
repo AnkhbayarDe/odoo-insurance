@@ -5,7 +5,7 @@ from odoo.exceptions import UserError, ValidationError
 
 
 class EmployeeDetails(models.Model):
-    """This class creates a model 'employee.details' and added fields """
+    """'employee.details' uusgeed fields hadgalah"""
     _name = 'employee.details'
     _description = "Employee Details"
 
@@ -43,9 +43,7 @@ class EmployeeDetails(models.Model):
         help="Invoice of last payment")
 
     def action_salary_payment(self):
-        """This function raises a user error if state is draft and
-        user error when base salary is less
-        and creates invoice with corresponding details given"""
+        """ state draft bol user error, amount 0-s ih, user error when base salary is less and creates invoice with corresponding details given"""
         if self.invoice_id:
             if self.invoice_id.state == 'draft':
                 raise UserError(_("You must validate the last payment made in "
