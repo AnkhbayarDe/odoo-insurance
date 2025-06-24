@@ -6,6 +6,16 @@
                     <h2>Insurance Report</h2>
                     <p>From: <t t-esc="doc.start_date"/> to <t t-esc="doc.end_date"/></p>
                     <p>Policy Type: <t t-esc="doc.policy_type_id.name"/></p>
+                    <p>Insurance Created: <t t-esc="doc.name"/></p>
+                    <p>Customer: <t t-esc="doc.customer_id.name"/></p>
+                    <p>Policy: <t t-esc="doc.policy_id.name"/></p>
+                    <p>Payment Type: <t t-esc="doc.payment_type"/></p>
+                    <p>Installment Amount: <t t-esc="doc.installment_amount"/></p>
+                    <p>Amount Remaining: <t t-esc="doc.amount_remaining"/></p>
+                    <p>Duration in Months: <t t-esc="doc.duration_months"/></p>
+                    <p>Policy Number: <t t-esc="doc.policy_number"/></p>
+                    <p>Agent: <t t-esc="doc.agent_id.name"/></p>
+                    <p>Commission Percentage: <t t-esc="doc.commission_percentage"/></p>
                 </div>
             </t>
         </t>

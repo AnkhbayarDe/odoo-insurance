@@ -23,4 +23,5 @@ class ReportInsurancePerPerson(models.AbstractModel):
             'doc_model': 'insurance.details',
             'docs': insurances,
             'partner_insurances': partner_insurances,
+            'doc': insurances[0] if insurances else None,  # <-- Add this line
         }

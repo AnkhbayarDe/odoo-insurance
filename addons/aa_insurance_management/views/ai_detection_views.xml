@@ -4,6 +4,9 @@
     <field name="model">ai.detection</field>
     <field name="arch" type="xml">
       <form string="AI Detection">
+       <header>
+          <button name="action_detect_image" type="object" string="Detect Damage" class="btn-primary"/>
+        </header>
         <sheet>
           <group>
             <field name="name"/>
