@@ -24,12 +24,15 @@
         'views/insurance_management_menus.xml',
         'views/policy_type_views.xml',
         'views/payment_type_views.xml',
+        'views/ai_detection_views.xml',
         'wizard/insurance_report_wizard_views.xml',
         'report/insurance_policy_report.xml',
-        'report/insurance_policy_template.xml',      
+        'report/insurance_policy_template.xml',    
+        'views/new_insure_report.xml',  
+        'views/customer_card.xml',
         'wizard/insure_wiz.xml',
         'report/insurance_per_person_report_template.xml',
-        'views/ai_detection_views.xml',
+
         'data/ir_cron.xml',
 ],
     'assets': {

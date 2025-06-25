@@ -2,7 +2,6 @@
 from odoo import api, fields, models, _, Command
 from odoo.exceptions import UserError, ValidationError
 
-
 class InsuranceDetails(models.Model):
     _name = 'insurance.details'
     _description = "Insurance Details"
@@ -147,3 +146,7 @@ class InsuranceDetails(models.Model):
             vals['name'] = self.env['ir.sequence'].next_by_code(
                 'insurance.details') or 'New'
         return super(InsuranceDetails, self).create(vals)
+
+    def print_insurance_report(self):
+        """Trigger the PDF report for this insurance record."""
+        return self.env.ref('aa_insurance_management.report_insurance_customer_card').report_action(self)

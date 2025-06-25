@@ -20,13 +20,14 @@ class AiDetection(models.Model):
     result_image = fields.Binary(string="Detected Image")
     image_filename = fields.Char(string="Filename")
     result_filename = fields.Char(string="Detected Filename")
+   # uploaded_by = fields.Many2one('hr.employee', string="Uploaded By", default=lambda self: self.env.user)
     uploaded_by = fields.Many2one('res.users', string="Uploaded By", default=lambda self: self.env.user)
+
     upload_date = fields.Datetime(string="Upload Date", default=fields.Datetime.now)
     detected_at = fields.Datetime(string="Detected At")
     confidence = fields.Float(string="Confidence")
     active = fields.Boolean(default=True)
 
-    # For testing or scripted bulk detection
     @api.model
     def create_detection(self, name, image_path):
         with open(image_path, 'rb') as img_file:
@@ -35,7 +36,7 @@ class AiDetection(models.Model):
                 response = requests.post("http://127.0.0.1:9000/detect", files=files)
                 response.raise_for_status()
             except requests.exceptions.RequestException as e:
-                raise ValueError(f"❌ Error contacting AI server: {e}")
+                raise ValueError(f" Error contacting AI server: {e}")
 
         result = response.json()
 
@@ -88,7 +89,7 @@ class AiDetection(models.Model):
             result = response.json()
 
             if "error" in result:
-                raise UserError(f"⚠️ AI Service Error: {result['error']}")
+                raise UserError(f" AI Service Error: {result['error']}")
 
             record.result_image = result["result_image"]
             record.result_filename = result["result_filename"]
@@ -100,13 +101,13 @@ class AiDetection(models.Model):
     @api.model
     def cron_example_action(self):
         try:
-            _logger.info("⏰ [CRON] AI Detection cleanup started at %s", datetime.now())
+            _logger.info(" [CRON] AI Detection cleanup started at %s", datetime.now())
 
             pending_detections = self.search([('result_image', '=', False)])
             _logger.info("🔎 Found %s pending detections to process.", len(pending_detections))
 
             if len(pending_detections) > 50:
-                _logger.warning("⚠️ High backlog: %s unprocessed detections!", len(pending_detections))
+                _logger.warning(" High backlog: %s unprocessed detections!", len(pending_detections))
 
             # Archive detections older than 90 days
             old_entries = self.search([('upload_date', '<', datetime.now() - timedelta(days=90))])
@@ -114,5 +115,5 @@ class AiDetection(models.Model):
             _logger.info("📦 Archived %s old detection records.", len(old_entries))
 
         except Exception as e:
-            _logger.error("❌ CRON job error: %s", str(e))
+            _logger.error(" CRON job error: %s", str(e))
             raise UserError(f"CRON job failed: {e}")

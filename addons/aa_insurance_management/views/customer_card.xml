@@ -1,0 +1,87 @@
+<odoo>
+    <template id="report_patient_detail">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page" style="font-family: Arial, sans-serif;">
+                    <h2 style="color:#2c3e50;">Customer Card</h2>
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr>
+                            <td style="font-weight:bold;">Insurance No:</td>
+                            <td><t t-esc="docs[0].name"/></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:bold;">Customer:</td>
+                            <td><t t-esc="docs[0].partner_id.name"/></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:bold;">Policy:</td>
+                            <td><t t-esc="docs[0].policy_id.name"/></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:bold;">Payment Type:</td>
+                            <td><t t-esc="docs[0].payment_type"/></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:bold;">Installment Amount:</td>
+                            <td><t t-esc="docs[0].amount_installment"/></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:bold;">Amount Remaining:</td>
+                            <td><t t-esc="docs[0].amount_remaining"/></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:bold;">Duration (months):</td>
+                            <td><t t-esc="docs[0].policy_duration"/></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:bold;">Policy Number:</td>
+                            <td><t t-esc="docs[0].policy_number"/></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:bold;">Agent:</td>
+                            <td><t t-esc="docs[0].employee_id.name"/></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:bold;">Commission Percentage:</td>
+                            <td><t t-esc="docs[0].commission_rate"/>%</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:bold;">Date Started:</td>
+                            <td><t t-esc="docs[0].start_date"/></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:bold;">Date Closed:</td>
+                            <td><t t-esc="docs[0].close_date"/></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:bold;">Amount:</td>
+                            <td><t t-esc="docs[0].amount"/></td>
+                        </tr>
+                    </table>
+                    <h3 style="margin-top:30px; color:#34495e;">Invoices</h3>
+                    <table style="width:100%; border:1px solid #ccc; border-collapse: collapse;">
+                        <tr style="background:#f4f4f4;">
+                            <th style="border:1px solid #ccc; padding:4px;">Date</th>
+                            <th style="border:1px solid #ccc; padding:4px;">Description</th>
+                            <th style="border:1px solid #ccc; padding:4px;">Amount</th>
+                            <th style="border:1px solid #ccc; padding:4px;">Status</th>
+                        </tr>
+                        <t t-foreach="docs[0].invoice_ids" t-as="inv">
+                            <tr>
+                                <td style="border:1px solid #ccc; padding:4px;"><t t-esc="inv.invoice_date"/></td>
+                                <td style="border:1px solid #ccc; padding:4px;"><t t-esc="inv.name"/></td>
+                                <td style="border:1px solid #ccc; padding:4px;"><t t-esc="inv.amount_total"/></td>
+                                <td style="border:1px solid #ccc; padding:4px;"><t t-esc="inv.state"/></td>
+                            </tr>
+                        </t>
+                    </table>
+                    <h3 style="margin-top:30px; color:#34495e;">Extra Notes</h3>
+                    <div style="border:1px solid #ccc; padding:8px; min-height:40px;">
+                        <t t-raw="docs[0].note_field"/>
+                    </div>
+                    <!-- Activities section can be added here if you have related activities -->
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

@@ -16,6 +16,7 @@
                             type="object"
                             invisible="state !='confirmed'"
                             class="oe_highlight"/>
+                    <button name="print_insurance_report" type="object" string="Print" class="btn-primary"/>
                     <field name="state" widget="statusbar"/>
                 </header>
                 <sheet>
